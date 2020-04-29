@@ -18,7 +18,9 @@ Create a variable called `monthlyInterestRate` and give it the value of interest
 Create another variable called `periods` and give it the value of years*12.
 */
 let monthlyInterestRate = (0.05/12);
+monthlyInterestRate; .00416667
 let periods = (years*12);
+periods; 360
 
 
 
@@ -31,19 +33,53 @@ Hint #2: you'll need to use the `math` object for parts of this calculation!
 
 When your math is correct, monthlyRate will equal 1073.64
 */
+P= 200000
+N= 360
+I= .00416667
 
+M = P [I(1 + I)^N] / [(1 + I)^N - 1]
 
+let numerator = I(1 + I)^N
+numerator; .01862
 
+let denominator = (1 + I)^N - 1
+denominator; 3.4677
+
+200000(.01862/3.4677)= 1073.64
+
+monthlyRate; 1073.64
 
 // 🏡 Task 3: Function
 /* Create a function called `mortgageCalculator` that combines all of the steps from task 1 and 2 and returns a sentence "{Name}, your monthly rate is ${monthlyRate}"
 
 If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly rate is 1073.64"
 */
+let principal = 200000;             
+let interest = 0.05;
+let years = 30; 
+const name = Kevin;
+
+P= 200000
+N= 360
+I= .00416667
+
+let numerator = I(1 + I)^N
+numerator; .01862
+
+let denominator = (1 + I)^N - 1
+denominator; 3.4677
+
+200000(.01862/3.4677)= 1073.64
+
+monthlyRate; 1073.64
 
 
 
+function mortgageCalculator (M = P [I(1 + I)^N] / [(1 + I)^N - 1]){
+    
+}
 
+let Name = 
 
 // 🏡 Task 4: Arguments and Parameters
 /* Substitute the variables in your functions for parameters such that you can substitute `P`, `I`, and `N` when you call the function.
