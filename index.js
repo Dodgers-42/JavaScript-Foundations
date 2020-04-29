@@ -76,7 +76,7 @@ monthlyRate; 1073.64
 ^= Math.pow (use this)
 
 function mortgageCalculator (){
-    console.log('Name,' + 'your monthly rate is' + ( P*(I*(1 + I) math.pow ) / ((1 + I) math.pow - 1)));
+    console.log('Name,' + 'your monthly rate is' + ( P*(I*(1 + I) math.pow ) / ((1 + I) math.pow - 1))));
 }
 
 
@@ -88,7 +88,7 @@ For example,
 mortgageCalculator(2000000, 0.05, 30); <-- should return 1,073.64
 */
 function mortgageCalculator (P,I,N){
-    console.log('making variables' + P,I,N );
+    console.log('making variables' + ( P*(I*(1 + I) math.pow ) / ((1 + I) math.pow - 1))) );
 }
 
 mortgageCalculator(2000000,0.05,30);
@@ -108,6 +108,14 @@ if (creditScore > 740){
 } else{
     let newInterest = interset
 
+
+for (let i = 0; i < 10; i++) {
+    return name + ', with an interest rate of ' + newInterest + ', your monthly rate is $' + monthlyRate;
+      
+}
+      
+console.log(variableInterestRate(200000, 0.04, 30))
+     
 // 🏡 Task 6: Loops
 /* Write a new function called variableInterestRate. This function should be the same as mortgageCalculator, except it should console.log the monthly payment for 10 different interest rates at 0.5% increments plus or minus 2% from the inputted interest rate. Complete these calculations using a for loop.
 
