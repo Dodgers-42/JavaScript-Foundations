@@ -6,7 +6,7 @@
 let principal = 200000;
 let interest = 0.05;
 let years = 30; 
-const name = Kevin;
+const name = 'Kevin';
 
 
 
@@ -73,10 +73,10 @@ denominator; 3.4677
 
 monthlyRate; 1073.64
 
-
+^= Math.pow (use this)
 
 function mortgageCalculator (){
-    console.log('Name,' + 'your monthly rate is' + (M = P [I(1 + I)^N] / [(1 + I)^N - 1]));
+    console.log('Name,' + 'your monthly rate is' + ( P*(I*(1 + I) math.pow ) / ((1 + I) math.pow - 1)));
 }
 
 
@@ -91,9 +91,7 @@ function mortgageCalculator (P,I,N){
     console.log('making variables' + P,I,N );
 }
 
-mortgageCalculator('0,5,34');
-mortgageCalculator('23,145,17');
-mortgageCalculator('63,7,49');
+mortgageCalculator(2000000,0.05,30);
 
 
 
@@ -103,9 +101,12 @@ mortgageCalculator('63,7,49');
 
 Then, add control flow within your function such that IF creditScore is above 740, interest rate drops by 0.5%, if credit score is below 660, interest rate increases by 0.5% and if credit score is anywhere between 660 and 740 interest rate doesn't change.
 */
-
-
-
+if (creditScore > 740){
+    let newInterest = interest - 0.005
+} else if (creditScore < 660){
+    let newInterest = interset + 0.005
+} else{
+    let newInterest = interset
 
 // 🏡 Task 6: Loops
 /* Write a new function called variableInterestRate. This function should be the same as mortgageCalculator, except it should console.log the monthly payment for 10 different interest rates at 0.5% increments plus or minus 2% from the inputted interest rate. Complete these calculations using a for loop.
@@ -123,7 +124,15 @@ For example, variableInterestRate(200000, 0.04, 30) should console.log:
 "{Name}, with an interest rate of 0.06, your monthly rate is $1199"
 */
 
+function variableInterestRate(principal, interestRate, years){
+   let Name = 'Kevin'
+   let monthlyInterestRate = (i/12)/12;
+   let periods = years * 12;
+   let monthlyRate = (principal) * ((monthlyInterestRate) * Math.pow( 1 + monthlyInterestRate,periods)) / (Math.pow( 1 + monthlyInterestRate, periods) -1);
 
+   console.log(Name + ", with an interest rate of " + interestRate + ", your monthly rate is $" + monthlyRate);
+   interestRate + .005;
+}
 
 
 // 🌟🌟🌟 STRETCH 🌟🌟🌟//
