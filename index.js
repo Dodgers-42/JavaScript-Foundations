@@ -73,11 +73,11 @@ denominator; 3.4677
 
 monthlyRate; 1073.64
 
-^= Math.pow (use this)
+// ^= Math.pow (use this)
 
 function mortgageCalculator (){
-    console.log('Name,' + 'your monthly rate is' + ( P*(I*(1 + I) math.pow ) / ((1 + I) math.pow - 1))));
-}
+    console.log('Name,' + 'your monthly rate is' + (principal) * ((monthlyInterestRate) * Math.pow( 1 + monthlyInterestRate, periods)) / (Math.pow( 1 + monthlyInterestRate, periods) -1));
+}                   
 
 
 
@@ -88,9 +88,9 @@ For example,
 mortgageCalculator(2000000, 0.05, 30); <-- should return 1,073.64
 */
 function mortgageCalculator (P,I,N){
-    console.log('making variables' + ( P*(I*(1 + I) math.pow ) / ((1 + I) math.pow - 1))) );
+    console.log('making variables' + ( P*(I*(1 + I) Math.pow ) / ((1 + I) Math.pow - 1))) );
 }
-
+    console.log('making variables' + (principal) * ((monthlyInterestRate) * Math.pow( 1 + monthlyInterestRate,periods)) / (Math.pow( 1 + monthlyInterestRate, periods) -1));
 mortgageCalculator(2000000,0.05,30);
 
 
@@ -133,7 +133,7 @@ For example, variableInterestRate(200000, 0.04, 30) should console.log:
 */
 
 function variableInterestRate(principal, interestRate, years){
-   let Name = 'Kevin'
+   const Name = 'Kevin';
    let monthlyInterestRate = (i/12)/12;
    let periods = years * 12;
    let monthlyRate = (principal) * ((monthlyInterestRate) * Math.pow( 1 + monthlyInterestRate,periods)) / (Math.pow( 1 + monthlyInterestRate, periods) -1);
