@@ -45,7 +45,7 @@ numerator; .01862
 let denominator = (1 + I)^N - 1
 denominator; 3.4677
 
-200000(.01862/3.4677)= 1073.64
+P(numerator/denominator)  =  200000(.01862/3.4677)= 1073.64
 
 monthlyRate; 1073.64
 
@@ -75,11 +75,11 @@ monthlyRate; 1073.64
 
 
 
-function mortgageCalculator (M = P [I(1 + I)^N] / [(1 + I)^N - 1]){
-    
+function mortgageCalculator (){
+    console.log('Name,' + 'your monthly rate is' + (M = P [I(1 + I)^N] / [(1 + I)^N - 1]));
 }
 
-let Name = 
+
 
 // 🏡 Task 4: Arguments and Parameters
 /* Substitute the variables in your functions for parameters such that you can substitute `P`, `I`, and `N` when you call the function.
@@ -87,7 +87,13 @@ let Name =
 For example,
 mortgageCalculator(2000000, 0.05, 30); <-- should return 1,073.64
 */
+function mortgageCalculator (P,I,N){
+    console.log('making variables' + P,I,N );
+}
 
+mortgageCalculator('0,5,34');
+mortgageCalculator('23,145,17');
+mortgageCalculator('63,7,49');
 
 
 
