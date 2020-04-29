@@ -88,11 +88,14 @@ For example,
 mortgageCalculator(2000000, 0.05, 30); <-- should return 1,073.64
 */
 function mortgageCalculator (P,I,N){
-    console.log('making variables' + ( P*(I*(1 + I) Math.pow ) / ((1 + I) Math.pow - 1))) );
-}
-    console.log('making variables' + (principal) * ((monthlyInterestRate) * Math.pow( 1 + monthlyInterestRate,periods)) / (Math.pow( 1 + monthlyInterestRate, periods) -1));
-mortgageCalculator(2000000,0.05,30);
+    // console.log('making variables' + ( P*(I*(1 + I) Math.pow ) / ((1 + I) Math.pow - 1))) );
 
+    console.log('making variables' + (principal) * ((monthlyInterestRate) * Math.pow( 1 + monthlyInterestRate,periods)) / (Math.pow( 1 + monthlyInterestRate, periods) -1));
+
+
+    mortgageCalculator(2000000,0.05,30);
+
+}
 
 
 
@@ -114,7 +117,7 @@ for (let i = 0; i < 10; i++) {
       
 }
       
-console.log(variableInterestRate(200000, 0.04, 30))
+console.log(variableInterestRate(200000, 0.05, 30))
      
 // 🏡 Task 6: Loops
 /* Write a new function called variableInterestRate. This function should be the same as mortgageCalculator, except it should console.log the monthly payment for 10 different interest rates at 0.5% increments plus or minus 2% from the inputted interest rate. Complete these calculations using a for loop.
