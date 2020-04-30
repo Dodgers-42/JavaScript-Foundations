@@ -17,7 +17,7 @@ Create a variable called `monthlyInterestRate` and give it the value of interest
 
 Create another variable called `periods` and give it the value of years*12.
 */
-let monthlyInterestRate = (0.05/12);
+let monthlyInterestRate = (0.05/12);    interestRate
 monthlyInterestRate; .00416667
 let periods = (years*12);
 periods; 360
