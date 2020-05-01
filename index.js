@@ -45,6 +45,8 @@ numerator; .01862
 let denominator = (1 + I)^N - 1
 denominator; 3.4677
 
+
+
 let numerator = monthlyInterestRate * Math.pow((1 + monthlyInterestRate), periods);
 let denominator = Math.pow((1 + monthlyInterestRate), periods) - 1;
 
