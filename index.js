@@ -137,13 +137,15 @@ For example, variableInterestRate(200000, 0.04, 30) should console.log:
 */
 
 function variableInterestRate(principal, interestRate, years){
+    for (i= interestRate -.02; i <= interestRate + .02; i=i+.005){
    const Name = 'Kevin';
-   let monthlyInterestRate = (i/12)/12;
+   let monthlyInterestRate = (i/12);
    let periods = years * 12;
    let monthlyRate = (principal) * ((monthlyInterestRate) * Math.pow( 1 + monthlyInterestRate,periods)) / (Math.pow( 1 + monthlyInterestRate, periods) -1);
 
    console.log(Name + ", with an interest rate of " + interestRate + ", your monthly rate is $" + monthlyRate);
    interestRate + .005;
+    }
 }
 
 
